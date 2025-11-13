@@ -3,18 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Verde Ação</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Verde Ação</h1>
-    <h2>Ser voluntário na Verde Ação é plantar esperança e colher transformação. Juntos, cuidamos do planeta e inspiramos mudanças reais!</h2>
-    <h3>Quero ser voluntário</h3>
 
-    <img src="/Imagens/background.png" alt="Plano de fundo" width="1440" height="572">
-    <img src="/Imagens/criancas.png" alt="Crianças plantando árvores">
-    <img src="/Imagens/florestas.png" alt="Florestas verdes">
-    <img src="/Imagens/girassol.png" alt="Girassol">
-    <img src="/Imagens/plantacao.png" alt="Plantação verde">
+    <!-- ====== CABEÇALHO ====== -->
+    <header>
+        <div class="logo">Verde Ação</div>
+        <nav>
+            <a href="#atividades">Atividades</a>
+            <a href="#cadastro">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <!-- ====== SEÇÃO HERO ====== -->
+    <section class="hero">
+        <img src="Imagens/background.png" alt="Natureza verde" class="bg">
+        <div class="hero-text">
+            <h1>Verde Ação</h1>
+            <p>Ser voluntário na Verde Ação é plantar esperança e colher transformação. 
+               Juntos, cuidamos do planeta e inspiramos mudanças reais!</p>
+            <a href="#cadastro" class="btn">Quero ser voluntário</a>
+        </div>
+    </section>
+
+    <!-- ====== SEÇÃO ATIVIDADES ====== -->
+    <section id="atividades" class="atividades">
+        <div class="card">
+            <img src="Imagens/girassol.png" alt="Plantio de mudas">
+            <h3>Plantio de mudas</h3>
+            <p>Cada muda plantada ajuda a restaurar o meio ambiente.</p>
+            <button>Ver mais</button>
+        </div>
+        <div class="card">
+            <img src="Imagens/criancas.png" alt="Educação ambiental">
+            <h3>Educação Ambiental</h3>
+            <p>Promover diálogos e ações de conscientização.</p>
+            <button>Ver mais</button>
+        </div>
+        <div class="card">
+            <img src="Imagens/plantacao.png" alt="Cuidados">
+            <h3>Cuidados</h3>
+            <p>Ajude a manter áreas preservadas.</p>
+            <button>Ver mais</button>
+        </div>
+        <div class="card">
+            <img src="Imagens/florestas.png" alt="Mapeamento">
+            <h3>Mapeamento</h3>
+            <p>Identifique áreas que precisam de recuperação.</p>
+            <button>Ver mais</button>
+        </div>
+    </section>
+
+    <!-- ====== SEÇÃO CADASTRO ====== -->
+    <section id="cadastro" class="cadastro">
+        <h2>Cadastre-se como voluntário</h2>
+        <p>Faça parte de ações que transformam o mundo. Com pequenas atitudes, 
+           você pode gerar grandes impactos na natureza e na comunidade.</p>
+
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Cidade" required>
+
+            <label for="atividade">Atividade:</label>
+            <select id="atividade">
+                <option>Selecione atividade</option>
+                <option>Plantio de mudas</option>
+                <option>Educação Ambiental</option>
+                <option>Cuidados</option>
+                <option>Mapeamento</option>
+            </select>
+
+            <button type="submit" class="btn-form">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- ====== RODAPÉ ====== -->
+    <footer>
+        <p>© todos os direitos reservados</p>
+    </footer>
+
 </body>
 </html>
